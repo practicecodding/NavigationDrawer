@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Navigation Drawer</string>
+
+    <string name="Open_Drawer">Drawer Open</string>
+    <string name="Close_Drawer">Drawer Close</string>
+
+    <style name="toastShare">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#3F51B5</item>
+        <!--        <item name="stFont">@font/retrofont</item>-->
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#fff</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#673AB7</item>
+        <!--        <item name="stIconStart">@drawable/share_icon</item>-->
+        <!--        <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">LONG</item>
+        LONG or SHORT
+        <!--        <item name="stGravity">center</item> top or center-->
+        <item name="stRadius">5dp</item>
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="toastPerson">
+        <item name="stTextBold">true</item>
+        <item name="stTextColor">#4CAF50</item>
+        <!--        <item name="stFont">@font/retrofont</item>-->
+        <item name="stTextSize">14sp</item>
+        <item name="stColorBackground">#fff</item>
+        <item name="stSolidBackground">true</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stStrokeColor">#673AB7</item>
+        <!--        <item name="stIconStart">@drawable/person_icon</item>-->
+        <!--        <item name="stIconEnd">@drawable/ic</item>-->
+        <item name="stLength">LONG</item>
+        LONG or SHORT
+        <!--        <item name="stGravity">center</item> top or center-->
+        <item name="stRadius">500dp</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

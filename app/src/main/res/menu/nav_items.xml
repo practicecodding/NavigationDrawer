@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+
+        <item
+            android:id="@+id/navPerson"
+            android:icon="@drawable/person_icon"
+            android:title="Person"
+            android:checkable="true"/>
+
+        <item
+            android:id="@+id/navShare"
+            android:icon="@drawable/share_icon"
+            android:title="Share"
+            android:checkable="true"
+            />
+
+        <item
+            android:id="@+id/navMenu"
+            android:icon="@drawable/menu_icon"
+            android:title="Menu"
+            android:checkable="true"
+            />
+
+    </group>
+
+
+    <group android:id="@+id/group2">
+
+        <item
+            android:id="@+id/navSetting"
+            android:icon="@drawable/person_icon"
+            android:title="setting"
+            />
+    </group>
+
+
+
+</menu>
