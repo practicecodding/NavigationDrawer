@@ -24,6 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.appbar.MaterialToolbar;
@@ -38,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     Toast toast;
     StyleableToast styleableToast;
+    ImageView headerImage;
+    View headerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         toolbar = findViewById(R.id.toolBar);
         navigationView = findViewById(R.id.navigationView);
+        headerView = navigationView.getHeaderView(0);
+        headerImage = headerView.findViewById(R.id.headerImage);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 MainActivity.this,drawerLayout,toolbar,R.string.Close_Drawer,R.string.Open_Drawer);
@@ -103,8 +108,9 @@ public class MainActivity extends AppCompatActivity {
                     styleableToast =StyleableToast.makeText(MainActivity.this, "Chittagong Stock Exchange", Toast.LENGTH_LONG, R.style.toastPerson);
                     styleableToast.show();
                 } else if (item.getItemId()==R.id.navShare) {
-                    drawerLayout.closeDrawer(GravityCompat.START);
                     toastMessage("Share");
+                    headerImage.setImageResource(R.drawable.share_icon);
+                    return true;
                 } else if (item.getItemId()==R.id.navMenu) {
                     drawerLayout.closeDrawer(GravityCompat.START);
                     toastMessage("Menu");
@@ -112,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                     drawerLayout.closeDrawer(GravityCompat.START);
                     toastMessage("Setting");
                 }
-                return true;
+                return false;
             }
         });
 
